@@ -1,0 +1,95 @@
+@font-face {
+    font-family: DigiClock;
+    src: url(DIGIFONT/DS-DIGIT.TTF);
+}
+
+.mainBox {
+    /* border: 1px solid red; */
+    height: 100dvh;
+    background-image: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.navbar h2 {
+    /* border: 1px solid red; */
+    font-family: DigiClock;
+    font-size: 60px;
+    color: #FFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 0px 0px 0px #CE5937;
+}
+
+
+.glass-container {
+    width: 700px;
+    height: 375px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 191, 255, 0.075);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+    border-right: 2px rgba(40, 40, 40, 0.35) solid;
+    /* font-size-adjust: 6000px; */
+}
+
+
+.glass-container p {
+    font-family: DigiClock;
+    font-size: 80px;
+    text-align: center;
+    /* color: black; */
+    /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0px 0px 0px #CE5937; */
+
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 0px 2px #CE5937;
+
+
+}
+
+
+
+/* For small devices (phones) */
+@media only screen and (max-width: 455px) {
+    .navbar h2 {
+        font-size: 30px;
+    }
+
+    .glass-container {
+        height: 300px;
+    }
+
+    .glass-container p {
+        font-size: 40px;
+    }
+}
+
+/* For medium devices (tablets) */
+/* @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+} */
+
+/* For large devices (laptops, desktops) */
+/* @media only screen and (min-width: 1025px) {
+
+} */
